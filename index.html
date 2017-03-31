@@ -1,0 +1,41 @@
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/GS_Valence_facade_rue.JPG/1280px-GS_Valence_facade_rue.JPG') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Ensemble Montplaisir</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">L'ETABLISSEMENT</a>
+        <a class="mdl-navigation__link" href="">LES PLUS</a>
+        <a class="mdl-navigation__link" href="">ESPACE ENTREPRISES</a>
+        <a class="mdl-navigation__link" href="">POST-DIPLOME</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">ENSEMBLE MONTPLAISIR</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">L'ETABLISSEMENT</a>
+      <a class="mdl-navigation__link" href="">LES PLUS</a>
+      <a class="mdl-navigation__link" href="">ESPACE ENTREPRISES</a>
+      <a class="mdl-navigation__link" href="">POST-DIPLOME</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  </main>
+</div>
